@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Header(props){
+function Header({titulo}){
     return(
         <h1 id='encabezado' className="encabezado">
-            {props.titulo}
+            {titulo}
         </h1>
-        
     )
 }
 

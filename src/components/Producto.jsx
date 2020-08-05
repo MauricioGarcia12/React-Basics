@@ -7,7 +7,10 @@ const Producto = ({producto,carrito,agregarProducto,productos}) => {
     const seleccionarProducto = id=>{
         //Cuando el id sea igual al del producto elegido traera todos los datos y creara el arreglo producto
         const producto =productos.filter(producto => producto.id ===id)[0];
-        console.log(producto)
+        agregarProducto([
+            //clonar un objeto o arreglo
+            ...carrito,producto
+        ])
         
     }
     return ( 
