@@ -36,7 +36,7 @@ function App() {
             productos={productos}
         />
       ))}
-      <Carrito carrito={carrito}/>
+      <Carrito carrito={carrito} agregarProducto={agregarProducto}/>
       <Footer fecha={fecha}/> 
   </Fragment>
       
