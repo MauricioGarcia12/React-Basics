@@ -1,10 +1,14 @@
 import React from 'react';
-const Producto = ({producto}) => {
+const Producto = ({producto,carrito,agregarProducto,productos}) => {
 
     const {nombre,precio, id}= producto;
+    
     //agregar producto al carrito
     const seleccionarProducto = id=>{
-        console.log('Comprando...'+id)
+        //Cuando el id sea igual al del producto elegido traera todos los datos y creara el arreglo producto
+        const producto =productos.filter(producto => producto.id ===id)[0];
+        console.log(producto)
+        
     }
     return ( 
         <div>
